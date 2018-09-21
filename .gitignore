@@ -1,0 +1,40 @@
+# bat
+*.bat
+
+# log
+/log
+log/
+/og/
+*.log
+*.tlog
+
+# bin
+/bin/
+/bin
+bin/
+*/*.tlog
+
+# debug 
+/debug
+debug/
+/debug/
+
+#Debug
+/Debug
+
+# bulid 
+/bulid
+
+# obj
+/obj
+*.obj
+
+# visual studio
+*.vcxproj
+*.sdf
+*.filters
+
+*.exe
+*.idb
+*.pdb
+*.user
