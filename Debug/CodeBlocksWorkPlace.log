@@ -1,9 +1,0 @@
-﻿  STL_Map.cpp
-STL_Map.cpp(40): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
-          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(937) : 参见“itoa”的声明
-STL_Map.cpp(67): error C2955: “std::map”: 使用 类 模板 需要 模板 参数列表
-          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\map(69) : 参见“std::map”的声明
-STL_Map.cpp(67): error C2144: 语法错误:“int”的前面应有“)”
-STL_Map.cpp(67): error C2039: “value_type”: 不是“`global namespace'”的成员
-STL_Map.cpp(67): error C2059: 语法错误:“)”
-STL_Map.cpp(69): error C2143: 语法错误 : 缺少“;”(在“return”的前面)
