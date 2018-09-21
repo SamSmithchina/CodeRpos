@@ -30,11 +30,19 @@ debug/
 *.obj
 
 # visual studio
+*.sln
 *.vcxproj
+*.user
 *.sdf
-*.filters
-
 *.exe
 *.idb
 *.pdb
-*.user
+*.suo
+*.filters
+*.opensdf 
+*.v12
+
+# code blocks
+*.cdb
+*.depend
+*.layout
