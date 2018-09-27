@@ -41,6 +41,7 @@ debug/
 *.filters
 *.opensdf 
 *.v12
+*.v12.suo
 
 # code blocks
 *.cdb
