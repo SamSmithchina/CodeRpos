@@ -11,12 +11,12 @@
 using namespace std;
 int main()
 {
-	map<int, int, string> myMap;
+	map<int, string> myMap;
 	std::pair<std::map<int, string>::iterator, bool> iter;
-	iter = myMap.insert < std::pair<int, string>(1, "11"));
+	iter = myMap.insert(std::pair<int, string>(1, "11"));
 	if (iter.second == false)
 	{
-		cout << "插入失败"
+		cout << "插入失败";
 	}
 	return 0;
 }
