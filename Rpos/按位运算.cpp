@@ -1,10 +1,10 @@
-/* c/c++ Î»ÔËËã ,
-Î»ÔËËã·ûÓÐ£º
-    &(°´Î»Óë)¡¢|(°´Î»»ò)¡¢^(°´Î»Òì»ò)¡¢~ (°´Î»È¡·´) , << (×óÒÆ)  £¬ >> (ÓÒÒÆ)¡£
-    ÆäÖÐ£¬°´Î»È¡·´ÔËËã·ûÊÇµ¥Ä¿ÔËËã·û£¬ÆäÓà¾ùÎªË«Ä¿ÔËËã·û¡£
-    Î»ÔËËã·ûµÄÓÅÏÈ¼¶´Ó¸ßµ½µÍ£¬ÒÀ´ÎÎª~¡¢&¡¢^¡¢|£¬
-    ÆäÖÐ~µÄ½áºÏ·½Ïò×ÔÓÒÖÁ×ó£¬ÇÒÓÅÏÈ¼¶¸ßÓÚËãÊõÔËËã·û£¬
-	ÆäÓàÔËËã·ûµÄ½áºÏ·½Ïò¶¼ÊÇ×Ô×óÖÁÓÒ£¬ÇÒÓÅÏÈ¼¶µÍÓÚ¹ØÏµÔËËã·û¡£
+ï»¿/* c/c++ ä½è¿ç®— ,
+ä½è¿ç®—ç¬¦æœ‰ï¼š
+    &(æŒ‰ä½ä¸Ž)ã€|(æŒ‰ä½æˆ–)ã€^(æŒ‰ä½å¼‚æˆ–)ã€~ (æŒ‰ä½å–å) , << (å·¦ç§»)  ï¼Œ >> (å³ç§»)ã€‚
+    å…¶ä¸­ï¼ŒæŒ‰ä½å–åè¿ç®—ç¬¦æ˜¯å•ç›®è¿ç®—ç¬¦ï¼Œå…¶ä½™å‡ä¸ºåŒç›®è¿ç®—ç¬¦ã€‚
+    ä½è¿ç®—ç¬¦çš„ä¼˜å…ˆçº§ä»Žé«˜åˆ°ä½Žï¼Œä¾æ¬¡ä¸º~ã€&ã€^ã€|ï¼Œ
+    å…¶ä¸­~çš„ç»“åˆæ–¹å‘è‡ªå³è‡³å·¦ï¼Œä¸”ä¼˜å…ˆçº§é«˜äºŽç®—æœ¯è¿ç®—ç¬¦ï¼Œ
+	å…¶ä½™è¿ç®—ç¬¦çš„ç»“åˆæ–¹å‘éƒ½æ˜¯è‡ªå·¦è‡³å³ï¼Œä¸”ä¼˜å…ˆçº§ä½ŽäºŽå…³ç³»è¿ç®—ç¬¦ã€‚
 */
 #include <iostream>
 #include <iomanip>
@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-	// char ÊÇÒ»¸ö×Ö½Ú£¬±ãÓÚ¹Û²ì×Ö½ÚÖ®¼äÎ»ÔËËãµÄÏÖÏó£»
+	// char æ˜¯ä¸€ä¸ªå­—èŠ‚ï¼Œä¾¿äºŽè§‚å¯Ÿå­—èŠ‚ä¹‹é—´ä½è¿ç®—çš„çŽ°è±¡ï¼›
 
 	char szLeft = '0';
 	char szRight = '1';
@@ -20,8 +20,8 @@ int main()
 	int iNumber[2] ={ 0x00 ,0x01 };
 
 	cout << setw(10) << setiosflags(ios::left)
-		<< "°´Î»Óë \n"
-		<< "char '0' & 'char ¡®1¡¯ = " << (char)(szLeft & szRight) //ÕâÀïµÄÐèÒªÓÃÀàÐÍ×ª»»Êä³ö//char '0' & 'char ¡®1¡¯ = char(0)
+		<< "æŒ‰ä½ä¸Ž \n"
+		<< "char '0' & 'char â€˜1â€™ = " << (char)(szLeft & szRight) //è¿™é‡Œçš„éœ€è¦ç”¨ç±»åž‹è½¬æ¢è¾“å‡º//char '0' & 'char â€˜1â€™ = char(0)
         <<endl
 		<< "0x01 & 0x00 = " << (iHex & iNumber[0] )
 		<<endl
@@ -29,8 +29,8 @@ int main()
 		<< endl << endl;
 
 	cout << setw(10) << setiosflags(ios::left)
-		<< "°´Î»»ò \n"
-		<< "char '0' | 'char ¡®1¡¯ = " << (szLeft | szRight)
+		<< "æŒ‰ä½æˆ– \n"
+		<< "char '0' | 'char â€˜1â€™ = " << (szLeft | szRight)
         <<endl
 		<< "0x01 | 0x00 = " << (iHex | iNumber[0])
 		<<endl
@@ -38,10 +38,10 @@ int main()
         << endl << endl;
 
 	cout << setw(10) << setiosflags(ios::left)
-		<< "°´Î»·Ç \n"
-		<< "°´Î»·Ç char '0' = " << (~ szLeft)
+		<< "æŒ‰ä½éž \n"
+		<< "æŒ‰ä½éž char '0' = " << (~ szLeft)
 		<<endl
-		<< " °´Î»·Ç ²åÈë¡®1¡¯ = " << (~ szRight)
+		<< " æŒ‰ä½éž æ’å…¥â€˜1â€™ = " << (~ szRight)
 		<<endl
 		<< "0x01 ~ 0x00 = " << (~ iNumber[0])
 		<<endl
@@ -49,7 +49,7 @@ int main()
         << endl << endl;
 
 	cout << setw(10) << setiosflags(ios::left)
-		<< "°´Î»Òì»ò \n"
+		<< "æŒ‰ä½å¼‚æˆ– \n"
 		<< " char '0' ^ char '1' = " <<( szLeft ^ szRight)
 		<<endl
 		<< "0x01 ^ 0x00 = " << (iHex ^ iNumber[0])
@@ -60,24 +60,24 @@ int main()
 	return 0;
 }
 
-/*Êä³ö½á¹û£º
-°´Î»Óë
-  char '0' & 'char ¡®1¡¯ = 48
+/*è¾“å‡ºç»“æžœï¼š
+æŒ‰ä½ä¸Ž
+  char '0' & 'char â€˜1â€™ = 48
 0x01 & 0x00 = 0
 0x01 & 0x01 = 1
 
-°´Î»»ò
-  char '0' | 'char ¡®1¡¯ = 49
+æŒ‰ä½æˆ–
+  char '0' | 'char â€˜1â€™ = 49
 0x01 | 0x00 = 1
 0x01 | 0x01 = 1
 
-°´Î»·Ç
-  °´Î»·Ç char '0' = -49
- °´Î»·Ç ²åÈë¡®1¡¯ = -50
+æŒ‰ä½éž
+  æŒ‰ä½éž char '0' = -49
+ æŒ‰ä½éž æ’å…¥â€˜1â€™ = -50
 0x01 ~ 0x00 = -1
 0x01 ~ 0x01 = -2
 
-°´Î»Òì»ò
+æŒ‰ä½å¼‚æˆ–
  char '0' ^ char '1' = 1
 0x01 ^ 0x00 = 1
 0x01 ^ 0x01 = 0
