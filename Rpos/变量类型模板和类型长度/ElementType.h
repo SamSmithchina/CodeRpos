@@ -10,7 +10,7 @@
 #define STRTYPE "elemtype: "
 #define STRNAME "elemname: "
 #define TYPEID(x) (typeid(x).name())	//	(STRTYPE)
-#define ELEMNAME(x) (STRNAME)(#x)	//	(STRNAME)
+#define ELEMNAME(x) (STRNAME) << (#x)	//	(STRNAME)
 #define ELEMTYPE(x) STRTYPE<<TYPEID(x)			//不要使用C++-->预编译到文件-->选项是， 如果选是程序就会报找不到ElemType.obj文件；
 
 template<class T>
